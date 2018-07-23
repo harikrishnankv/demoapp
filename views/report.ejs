@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<title>Weather app demo </title>
+
+<style type="text/css">
+
+.head { margin-top:100px;
+	    font-size:60px;
+	    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	    color: #F0282C;
+}
+
+	        
+
+.button {width:30%;
+         cursor: pointer;
+	      margin-top:20px;
+	      background-color:#F0282C;
+	      padding: 14px 20px;
+	      color: aliceblue;
+         margin-left:auto;
+          margin-right:auto;
+}
+.newupdate{
+	     margin-top:20px;
+	     font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+          color:#e9eade;
+          font-size:3 0px;
+          text-align:center;
+
+}
+.newtable{
+    border: 1px solid #4CAF50;
+    text-align: left;
+    padding: 8px;
+    margin-left:auto;
+    margin-right:auto;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+</style>
+</head>
+<body style="background-color:#32332f">
+<h1 align="center" class="head" ><strong>WEATHER FOR YOU</strong><br>
+</h1>
+
+	 <div class="newupdate">
+     <h2>WEATHER REPORT</h2>
+     <table class="newtable" >
+        <tr>
+            <th>WEATHER</th>
+            <th>MEASURE</th>
+            
+          </tr>
+          <tr>
+              <td>LOCATION</td>
+              <td><span> <%= hari_weather.city %></span> </td>
+              
+            </tr>
+            <tr>
+                
+                <td>TEMPREATURE</td>
+                <td><%= hari_weather.temperature %> ℃</td>
+            </tr>
+            <tr>
+                <td>PRESSURE</td>
+                <td><%= hari_weather.pressure %> mb</td>
+            </tr> 
+            <tr>
+                <td>HUMIDITY</td>
+                <td><%= hari_weather.humidity %> %</td>
+            </tr>
+     </table>
+     
+     <form action="/" method = "GET" >
+        
+        <button class="button">GO BACK</button>
+      </form>
+      
+     </div>
+
+
+     
+</body>
+</html>
+
+
