@@ -6,7 +6,7 @@
 6.'nodemon' access is enabled
 7.To start the application plase use either 'nodemon server.js' or 'node server.js'
   the port allocated is "3000"
-8.The screenshots are attached inthe folder "screen shorts"
+8.The screenshots are attached inthe folder "screen shots"
 Thankyou!!!
 
 
